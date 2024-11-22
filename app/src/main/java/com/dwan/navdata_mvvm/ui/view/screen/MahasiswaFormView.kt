@@ -81,6 +81,11 @@ fun MahasiswaFormView(
                         topStart = 15.dp)
                 )
                 .fillMaxSize()
-        ) {}
+        ) {
+            Column(
+                modifier = Modifier.fillMaxSize().padding(16.dp),
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {  }
+        }
     }
 }
