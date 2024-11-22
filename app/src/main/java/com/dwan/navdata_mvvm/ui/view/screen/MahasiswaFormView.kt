@@ -124,6 +124,15 @@ fun MahasiswaFormView(
                 Spacer(modifier = Modifier.padding(8.dp))
                 OutlinedTextField(
                     modifier = Modifier.fillMaxWidth(),
+                    value = nama,
+                    onValueChange = { nama = it},
+                    label = { Text(text = "Nama Mahasiswa") },
+                    leadingIcon = {}
+                )
+
+                Spacer(modifier = Modifier.padding(8.dp))
+                OutlinedTextField(
+                    modifier = Modifier.fillMaxWidth(),
                     value = email,
                     onValueChange = { email = it},
                     label = { Text(text = "Email Mahasiswa") },
