@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.dwan.navdata_mvvm.navigation.MahasiswaApp
 import com.dwan.navdata_mvvm.ui.theme.NavData_MVVMTheme
 
 class MainActivity : ComponentActivity() {
@@ -20,10 +21,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             NavData_MVVMTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
+                    MahasiswaApp(modifier = Modifier.padding(innerPadding))
                 }
             }
         }
@@ -42,6 +40,6 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
     NavData_MVVMTheme {
-        Greeting("Android")
+        MahasiswaApp()
     }
 }
