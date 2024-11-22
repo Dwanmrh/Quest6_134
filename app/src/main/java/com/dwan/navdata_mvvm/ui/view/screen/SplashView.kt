@@ -21,7 +21,7 @@ import com.dwan.navdata_mvvm.R
 
 @Composable
 fun SplashView(
-
+    onMulaiButton: () -> Unit,
 ) {
     Column(
         modifier = Modifier
@@ -36,7 +36,7 @@ fun SplashView(
         )
         Spacer(modifier = Modifier.padding(16.dp))
         Button(
-            onClick = { /*TODO*/ () },
+            onClick = { onMulaiButton() },
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(32.dp)
