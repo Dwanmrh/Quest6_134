@@ -30,3 +30,18 @@ fun DetailView(
 
     }
 }
+
+@Composable
+fun DetailRow(label: String, value: String) {
+    Column(modifier = Modifier.padding(bottom = 8.dp)) {
+        Text(
+            text = label,
+            fontWeight = FontWeight.Bold,
+            fontSize = 16.sp
+        )
+        Text(
+            text = value,
+            fontSize = 14.sp
+        )
+    }
+}
